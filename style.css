@@ -1,0 +1,112 @@
+@font-face {
+  src:url(fonts/Helvetica.ttf);
+  font-family: HelveticaReg;
+}
+
+@font-face {
+  src:url(fonts/Helvetica-Bold.ttf);
+  font-family: HelveticaBold;
+}
+
+body{
+  background-color: black;
+  color:white;
+  margin: 0px;
+  border: 0px;
+}
+
+header {
+  background: black;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+
+
+.container {
+  width: 80%l
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 50px;
+  padding-top: 45px;
+  position: relative;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: white;
+
+  position: absolute;
+  top: 0;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+p {
+font-size:18px;
+font-family: HelveticaReg;
+line-height: 120%;
+text-indent: 25px;
+}
+
+a {
+font-size:18px;
+font-family: HelveticaReg;
+text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size:60px;
+  font-family: HelveticaBold;
+}
+
+h2 {
+  font-size:40px;
+  font-family: HelveticaBold;
+  text-align: center;
+  text-decoration: underline;
+}
