@@ -17,11 +17,19 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
-  padding: 10px 100px;
+  height: 70px;
+  padding: 0px 495px;
   box-sizing: border-box;
   transition: .3s;
+  background-color: black;
+  opacity:0.80;
 
+}
+
+.navlogo {
+  position: fixed;
+  left:10px;
+  top: 5px;
 }
 
 nav.black {
@@ -34,10 +42,10 @@ nav.black {
 
 nav ul {
   list-style: none;
-  float: right;
   margin: 0;
   padding: 0;
   display: flex;
+  float: right;
 }
 
 nav ul li {
