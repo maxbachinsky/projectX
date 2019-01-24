@@ -6,6 +6,25 @@
   <title>Rollin Events</title>
   <script src="jquery-3.3.1.min.js"></script>
   <script src="my.js"></script>
+  <script src="https://www.eventbrite.ca/static/widgets/eb_widgets.js"></script>
+
+  <script type="text/javascript">
+      var exampleCallback = function() {
+          console.log('Order complete!');
+      };
+
+      window.EBWidgets.createWidget({
+          // Required
+          widgetType: 'checkout',
+          eventId: '55317345670',
+          iframeContainerId: 'eventbrite-widget-container-55317345670',
+
+          // Optional
+          iframeContainerHeight: 250,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+          onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+      });
+  </script>
+
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -48,11 +67,10 @@
     </div>
   </div>
 
-  <section class="section section-dark" id="Purchase">
+  <section class="section section-light" id="Purchase">
     <h2>Purchase</h2>
-    <p>
-      Buy our shit bitch.
-    </p>
+      <div id="eventbrite-widget-container-55317345670"></div>
+
   </section>
 
   <div class="pimg4">
